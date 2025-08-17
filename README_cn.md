@@ -262,7 +262,7 @@ done
 ```bibtex
 @article{li2025unmixing,
   title={Unmixing Gradients: Uncovering Persistent Leakage in Federated Learning via Independent Component Analysis},
-  author={},
+  author={Minhao, Li and Le, Wang and Zhaohua, Li and Rongxin Hu},
   journal={投稿ing},
   year={2025},
   pages={XXX--XXX}
