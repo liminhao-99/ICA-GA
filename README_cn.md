@@ -30,8 +30,8 @@ pip install -r requirements.txt
 mkdir -p data/fl_models
 mkdir -p data/gen_models
 mkdir -p data/temp
-# 下载预训练模型包
-wget https://github.com/liminhao-99/ICA-GA/releases
+# 下载模型压缩包
+wget -O data/temp/models_fine-tuned.zip https://github.com/liminhao-99/ICA-GA/releases/download/models/models_fine-tuned.zip
 # 解压
 unzip -q data/temp/models_fine-tuned.zip -d data/temp
 # 移动模型
