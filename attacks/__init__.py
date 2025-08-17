@@ -7,7 +7,7 @@ from .inverting_gradients import IG
 from .see_through_gradients import STG
 from .cocktail_party_attack import CPA
 from .fgla import FGLA
-from .icaga import ICAGA
+from .ica_ga import ICAGA
 
 gla_attacks = {
     "IG": IG,
