@@ -58,7 +58,7 @@ You can run different experiments by modifying the command-line arguments.
 - **Argument Format**: `-key=value`. Please note that arguments must start with a `-`, use `=` for assignment, and contain no extra spaces.
 - **More Arguments**: Each experiment script (e.g., `fedsgd_attacks.py`) contains more detailed argument descriptions in its comments.
 
-The experiment results will be saved to the specified CSV file. For experiments that are repeated multiple times, the `test_num` column in the table typically indicates the experiment number, and a final `all` row records the mean and variance of all metrics.
+The experiment results will be saved to the specified CSV file. For experiments that are repeated multiple times, the `test_num` column in the table typically indicates the experiment number, and a final `all` row records the mean of all metrics.
 
 ### 2.1. FedSGD Attack Test
 

@@ -58,7 +58,7 @@ mv data/temp/gen_models/gen_1x-CT-RCSE_r50-fine-tuned.pth data/gen_models/gen_1x
 - **参数格式**: `-key=value`。请注意必须以`-`开头，使用 `=` 连接，且不含多余空格。
 - **更多参数**: 每个实验脚本（如 `fedsgd_attacks.py`）的注释中都包含了更详细的参数说明。
 
-实验结果会保存到指定的csv表格文件。如果是重复多次的实验，那么表格中一般用`test_num`列标注实验序号，最后用`all`行记录所有指标的均值和方差。
+实验结果会保存到指定的csv表格文件。如果是重复多次的实验，那么表格中一般用`test_num`列标注实验序号，最后用`all`行记录所有指标的均值。
 
 ### 2.1. FedSGD 攻击测试
 
