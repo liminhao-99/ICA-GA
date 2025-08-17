@@ -24,14 +24,19 @@ pip install -r requirements.txt
 [建议] 下载我们预训练好的模型文件，以快速复现实验。
 - `ResNet50_no-avgpool_out-100_cifar100_fine-tuned.pth`: ResNet-50，基于PyTorch默认预训练参数，在Cifar100上充分微调。作为FL模型。
 - `gen_1x_CT_RCSE_r50_fine_tuned.pth`: 论文中所使用的轻量级生成器，基于上述ResNet-50模型进行充分训练。
-下载模型文件并放置于`./data/fl_models`及`./data/fl_models`:
+下载模型文件并放置于`./data/fl_models`及`./data/gen_models`:
 ```sh
 # 创建数据目录
-mkdir data
+mkdir -p data/fl_models
+mkdir -p data/gen_models
+mkdir -p data/temp
 # 下载预训练模型包
-wget $RELEASE_URL -O latest_release.zip
+wget https://github.com/liminhao-99/ICA-GA/releases
 # 解压
-unzip -q latest_release.zip -d ./data/models
+unzip -q data/temp/models_fine-tuned.zip -d data/temp
+# 移动模型
+mv data/temp/fl_models/ResNet50_no-avgpool_out-100_cifar100_fine-tuned.pth data/fl_models/ResNet50_no-avgpool_out-100_cifar100_fine-tuned.pth
+mv data/temp/gen_models/gen_1x-CT-RCSE_r50-fine-tuned.pth data/gen_models/gen_1x-CT-RCSE_r50-fine-tuned.pth
 ```
 
 ### 数据集
@@ -41,7 +46,7 @@ unzip -q latest_release.zip -d ./data/models
 
 ## 实验
 
-实验参数的格式是 `-key=value` 。必须用`=`分隔，且中间没有多余的空格。
+命令行参数的格式是 `-key=value` 。必须用`=`分隔，且中间没有多余的空格。
 
 确保当前工作目录是项目根目录，按以下指令启动实验。
 
