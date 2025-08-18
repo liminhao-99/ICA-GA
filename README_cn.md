@@ -12,7 +12,7 @@
 
 ```sh
 # 克隆本仓库
-git clone https://github.com/liminhao-99/ICA-GA.git
+git clone https://github.com/anonymous/ICA-GA.git
 cd ICA-GA
 ```
 
@@ -37,7 +37,7 @@ mkdir -p data/fl_models
 mkdir -p data/gen_models
 mkdir -p data/temp
 # 下载模型压缩包
-wget -O data/temp/models_fine-tuned.zip https://github.com/liminhao-99/ICA-GA/releases/download/models/models_fine-tuned.zip
+wget -O data/temp/models_fine-tuned.zip https://github.com/anonymous/ICA-GA/releases/download/models/models_fine-tuned.zip
 # 解压
 unzip -q data/temp/models_fine-tuned.zip -d data/temp
 # 移动模型
@@ -260,9 +260,9 @@ done
 如果您在您的研究中使用了我们的代码或方法，请考虑引用我们的论文：
 
 ```bibtex
-@article{li2025unmixing,
+@article{anonymous2025unmixing,
   title={Unmixing Gradients: Uncovering Persistent Leakage in Federated Learning via Independent Component Analysis},
-  author={Minhao, Li and Le, Wang and Zhaohua, Li and Rongxin Hu},
+  author={anonymous},
   journal={投稿ing},
   year={2025},
   pages={XXX--XXX}
@@ -283,4 +283,4 @@ done
 
 ## 6. 许可证
 
-本项目采用 [MIT License](https://github.com/liminhao-99/ICA-GA/blob/main/LICENSE) 授权。
+本项目采用 [MIT License](https://github.com/anonymous/ICA-GA/blob/main/LICENSE) 授权。
