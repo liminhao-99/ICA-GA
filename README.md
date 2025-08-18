@@ -4,7 +4,7 @@ This is the code implementation for the paper "**Unmixing Gradients: Uncovering 
 
 In this work, we propose ICA-GA, a gradient leakage attack framework driven by the Independent Component Analysis (ICA) algorithm and based on the generative attack paradigm. By reframing the feature separation task as a classic Blind Source Separation problem from the field of signal processing, our method overcomes the limitations of existing approaches and demonstrates a more robust and persistent threat throughout the entire lifecycle of federated learning.
 
-Paper Link: [(Under Review)]()
+Paper Link: (Under Review)
 
 ## 1. Preparation
 
