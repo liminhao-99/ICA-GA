@@ -1,5 +1,7 @@
 # ICA-driven Generative Attacks (ICA-GA)
 
+![](README_ica_ga.png)
+
 This is the code implementation for the paper "**Unmixing Gradients: Uncovering Persistent Leakage in Federated Learning via Independent Component Analysis**".
 
 In this work, we propose ICA-GA, a gradient leakage attack framework driven by the Independent Component Analysis (ICA) algorithm and based on the generative attack paradigm. By reframing the feature separation task as a classic Blind Source Separation problem from the field of signal processing, our method overcomes the limitations of existing approaches and demonstrates a more robust and persistent threat throughout the entire lifecycle of federated learning.
@@ -11,14 +13,9 @@ Paper Link: (Under Review)
 ### 1.1 Get the Source Code
 
 ```sh
-# During the double-blind review period, the following git command is not available.
-# Please download the source code from the top right corner of this page.
-
-# git clone https://github.com/anonymous/ICA-GA.git
-# cd ICA-GA
+git clone https://github.com/liminhao-99/ICA-GA.git
+cd ICA-GA
 ```
-
-**For Double-Blind Review**: Please click the `Download Repository` button in the upper right corner of the current anonymous.4open.science page to download `ICA-GA.zip`, and then unzip it.
 
 ### 1.2. Create a Conda Environment
 
@@ -41,20 +38,16 @@ mkdir -p data/fl_models
 mkdir -p data/gen_models
 mkdir -p data/temp
 
-# --- For Double-Blind Review ---
-# Please download the pre-trained model archive 'models_fine-tuned.zip'
-# from the following anonymized link using your browser:
-# https://zenodo.org/records/16895524?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjQ4MGY4NGQzLTM1OGUtNDBkOS1hNWNiLTFlYzllNGY0NTQ4YiIsImRhdGEiOnt9LCJyYW5kb20iOiIxNjY0ZGI3ZTA2YTVlMTFjNTFiZmJjMzYwOGZhYTFiZSJ9.GLxbuWcg8J3ijPDwCbFoEagoFA0QROU1p6z82l00FJI4ucloRUDchtc6sAiJrDsW2xXDjAdKpMhlePymooKE9g
-#
-# After downloading, please place the 'models_fine-tuned.zip' file
-# into the 'data/temp' directory before proceeding.
-# --------------------------------
+# Download models
+wget -O data/temp/models_fine-tuned.zip https://github.com/liminhao-99/ICA-GA/releases/download/models/models_fine-tuned.zip
 
 # Unzip the archive
 unzip -q data/temp/models_fine-tuned.zip -d data/temp
+
 # Move the models to their final destination
 mv data/temp/fl_models/ResNet50_no-avgpool_out-100_cifar100_fine-tuned.pth data/fl_models/ResNet50_no-avgpool_out-100_cifar100_fine-tuned.pth
 mv data/temp/gen_models/gen_1x-CT-RCSE_r50-fine-tuned.pth data/gen_models/gen_1x-CT-RCSE_r50-fine-tuned.pth
+
 # rm -r data/temp # Clean up temporary files
 ```
 
@@ -272,11 +265,11 @@ done
 If you use our code or methods in your research, please consider citing our paper:
 
 ```bibtex
-@article{anonymous2025unmixing,
+@article{li2026unmixing,
   title={Unmixing Gradients: Uncovering Persistent Leakage in Federated Learning via Independent Component Analysis},
-  author={anonymous},
+  author={Li, Minhao and Wang, Le and Li, Zhaohua and Hu, Rongxin and Zhou, Tang and Fang, Binxing},
   journal={Under Review},
-  year={2025},
+  year={2026},
   pages={XXX--XXX}
 }
 ```
@@ -290,9 +283,9 @@ Our work is built upon many excellent prior studies. We especially thank the fol
 - https://github.com/pigeon-dove/FGLA
 
 > Cocktail Party Attack: Breaking Aggregation-Based Privacy in Federated Learning using Independent Component Analysis
-- https://arxiv.org/abs/2209.05578
+- https://proceedings.mlr.press/v202/kariyappa23a.html
 - https://github.com/facebookresearch/cocktail_party_attack
 
 ## 6. License
 
-This project is licensed under the [MIT License](https://github.com/anonymous/ICA-GA/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/liminhao-99/ICA-GA/blob/main/LICENSE).

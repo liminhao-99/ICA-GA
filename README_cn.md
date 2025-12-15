@@ -1,5 +1,7 @@
 # ICA-driven Generative Attacks (ICA-GA)
 
+![](README_ica_ga.png)
+
 这是论文 "**Unmixing Gradients: Uncovering Persistent Leakage in Federated Learning via Independent Component Analysis**" 的代码实现。
 
 在这项工作中，我们提出了ICA-GA，一个由独立成分分析（ICA）算法驱动、基于生成式攻击范式的梯度泄漏攻击框架。通过将特征分离任务重塑为信号处理领域经典的盲源分离问题，该方法克服了现有方法的局限性，在联邦学习的全生命周期内展现出更鲁棒的持续威胁。
@@ -278,7 +280,7 @@ done
 - https://github.com/pigeon-dove/FGLA
 
 > Cocktail Party Attack: Breaking Aggregation-Based Privacy in Federated Learning using Independent Component Analysis
-- https://arxiv.org/abs/2209.05578
+- https://proceedings.mlr.press/v202/kariyappa23a.html
 - https://github.com/facebookresearch/cocktail_party_attack
 
 ## 6. 许可证
