@@ -6,7 +6,7 @@
 
 在这项工作中，我们提出了ICA-GA，一个由独立成分分析（ICA）算法驱动、基于生成式攻击范式的梯度泄漏攻击框架。通过将特征分离任务重塑为信号处理领域经典的盲源分离问题，该方法克服了现有方法的局限性，在联邦学习的全生命周期内展现出更鲁棒的持续威胁。
 
-论文链接：（投稿ing）
+论文链接： https://doi.org/10.1016/j.sysarc.2025.103681
 
 ## 1. 准备工作
 
@@ -262,12 +262,15 @@ done
 如果您在您的研究中使用了我们的代码或方法，请考虑引用我们的论文：
 
 ```bibtex
-@article{anonymous2025unmixing,
-  title={Unmixing Gradients: Uncovering Persistent Leakage in Federated Learning via Independent Component Analysis},
-  author={anonymous},
-  journal={投稿ing},
-  year={2025},
-  pages={XXX--XXX}
+@article{li2025unmixing,
+  title = {Unmixing gradients: Uncovering persistent leakage in Federated Learning via Independent Component Analysis},
+  author={Li, Minhao and Wang, Le and Li, Zhaohua and Hu, Rongxin and Zhou, Tang and Fang, Binxing},
+  journal = {Journal of Systems Architecture},
+  pages = {103681},
+  year = {2025},
+  issn = {1383-7621},
+  doi = {https://doi.org/10.1016/j.sysarc.2025.103681},
+  url = {https://www.sciencedirect.com/science/article/pii/S1383762125003534}
 }
 ```
 
